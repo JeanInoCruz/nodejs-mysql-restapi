@@ -9,6 +9,10 @@
     {
       "url": "localhost:3000",
       "description": "Ruta base del proyecto local"
+    },
+    {
+      "url": "https://nodejs-mysql-restapi-ienu.onrender.com",
+      "description": "Ruta del proyecto en RenderAPP"
     }
   ],
   "tags": [

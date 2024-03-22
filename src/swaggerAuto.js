@@ -18,6 +18,10 @@ const doc = {
     {
       url: 'localhost:3000', // by default: 'http://localhost:3000'
       description: 'Ruta base del proyecto local' // by default: ''
+    },
+    {
+      url: 'https://nodejs-mysql-restapi-ienu.onrender.com',
+      description: 'Ruta del proyecto en RenderAPP'
     }
     // { ... }
   ],
