@@ -3,7 +3,7 @@
   "info": {
     "version": "1.0.0",
     "title": "NodeJS-MySQL-RestAPI-Tutorial",
-    "description": "Desarrollando uan RestApi desde cero y hacinedo un deploy en Railway"
+    "description": "Desarrollando una RestApi desde cero y haciendo un deploy en Railway, documentado con Swagger "
   },
   "servers": [
     {

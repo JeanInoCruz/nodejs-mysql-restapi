@@ -12,7 +12,7 @@ const doc = {
   info: {
     version: '1.0.0', // by default: '1.0.0'
     title: 'NodeJS-MySQL-RestAPI-Tutorial', // by default: 'REST API'
-    description: 'Desarrollando uan RestApi desde cero y hacinedo un deploy en Railway' // by default: ''
+    description: 'Desarrollando una RestApi desde cero y haciendo un deploy en Railway, documentado con Swagger ' // by default: ''
   },
   servers: [
     {
