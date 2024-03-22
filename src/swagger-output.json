@@ -1,14 +1,21 @@
 {
-  "swagger": "2.0",
+  "openapi": "3.0.0",
   "info": {
-    "title": "My API",
-    "description": "Description",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "title": "NodeJS-MySQL-RestAPI-Tutorial",
+    "description": "Desarrollando uan RestApi desde cero y hacinedo un deploy en Railway"
   },
-  "host": "localhost:3000",
-  "basePath": "/",
-  "schemes": [
-    "http"
+  "servers": [
+    {
+      "url": "localhost:3000",
+      "description": "Ruta base del proyecto local"
+    }
+  ],
+  "tags": [
+    {
+      "name": "",
+      "description": ""
+    }
   ],
   "paths": {
     "/": {
@@ -45,29 +52,29 @@
       },
       "post": {
         "description": "",
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "example": "any"
-                },
-                "salary": {
-                  "example": "any"
-                }
-              }
-            }
-          }
-        ],
         "responses": {
           "201": {
             "description": "Created"
           },
           "500": {
             "description": "Internal Server Error"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "example": "any"
+                  },
+                  "salary": {
+                    "example": "any"
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -80,7 +87,9 @@
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -102,7 +111,9 @@
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -124,21 +135,8 @@
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string"
-          },
-          {
-            "name": "body",
-            "in": "body",
             "schema": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "example": "any"
-                },
-                "salary": {
-                  "example": "any"
-                }
-              }
+              "type": "string"
             }
           }
         ],
@@ -151,6 +149,23 @@
           },
           "500": {
             "description": "Internal Server Error"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "example": "any"
+                  },
+                  "salary": {
+                    "example": "any"
+                  }
+                }
+              }
+            }
           }
         }
       }
